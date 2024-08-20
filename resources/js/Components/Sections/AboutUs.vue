@@ -609,13 +609,13 @@
                 Simplifying Refunds, Ensuring Satisfaction.
               </h2>
               <p class="mb-5 text-base text-body-color dark:text-dark-6">
-                In today's fast-paced world, the value of time and trust is paramount. At RefundPro, we understand the importance of both. Established with the vision to streamline the refund process, we've set out to transform how businesses handle returns and refunds. Our platform is designed to make refunds quick, easy, and hassle-free, ensuring customer satisfaction and loyalty.
+                In today's fast-paced world, the value of time and trust is paramount. At QuickReimbourse Experts Co., we understand the importance of both. Established with the vision to streamline the refund process, we've set out to transform how businesses handle returns and refunds. Our platform is designed to make refunds quick, easy, and hassle-free, ensuring customer satisfaction and loyalty.
               </p>
               <p class="mb-8 text-base text-body-color dark:text-dark-6">
-                Our innovative approach to handling refunds minimizes the wait time and maximizes transparency. With RefundPro, customers can initiate a refund request in a few simple steps and track the progress in real-time. Businesses benefit from our automated system that reduces manual errors and operational costs, fostering a positive brand image.
+                Our innovative approach to handling refunds minimizes the wait time and maximizes transparency. With QuickReimbourse Experts Co., customers can initiate a refund request in a few simple steps and track the progress in real-time. Businesses benefit from our automated system that reduces manual errors and operational costs, fostering a positive brand image.
               </p>
               <p class="mb-8 text-base text-body-color dark:text-dark-6">
-                We pride ourselves on our commitment to excellence, security, and customer service. Our team is dedicated to providing support and solutions that exceed expectations. Choose RefundPro, where refunds are not just transactions, but a step towards building lasting customer relationships.
+                We pride ourselves on our commitment to excellence, security, and customer service. Our team is dedicated to providing support and solutions that exceed expectations. Choose QuickReimbourse Experts Co., where refunds are not just transactions, but a step towards building lasting customer relationships.
               </p>
               <Link
                 :href="route('dashboard')"
