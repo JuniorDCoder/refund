@@ -3,6 +3,7 @@ import { Head } from '@inertiajs/vue3';
 import Header from '@/Components/Sections/Header.vue';
 import Hero from '@/Components/Sections/Hero.vue';
 import Footer from '@/Components/Sections/Footer.vue';
+import Steps from '@/Components/Sections/Steps.vue';
 
 defineProps({
     canLogin: {
@@ -39,7 +40,9 @@ function handleImageError() {
         />
         <Header />
         <Hero />
+        <Steps />
         <Footer />
+
 
     </div>
 </template>

@@ -29,31 +29,31 @@ import { Link } from '@inertiajs/vue3';
                 </div>
                 <!--End Col-->
                 <div class="text-left lg:mx-auto ">
-                    <h4 class="text-lg font-medium text-gray-900 mb-7">Products</h4>
+                    <h4 class="text-lg font-medium text-gray-900 mb-7">Refund Services</h4>
                     <ul class="text-sm transition-all duration-500">
-                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Figma UI System</Link></li>
-                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Icons Assets</Link></li>
-                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Responsive Blocks</Link></li>
-                        <li><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Components Library</Link></li>
+                        <li class="mb-6"><Link :href="route('dashboard')"  class="text-gray-600 hover:text-gray-900">Refund Request</Link></li>
+                        <li class="mb-6"><Link :href="route('dashboard')"  class="text-gray-600 hover:text-gray-900">Check Refund Status</Link></li>
+                        <li class="mb-6"><Link :href="route('dashboard')"  class="text-gray-600 hover:text-gray-900">Refund Policies</Link></li>
+                        <li><Link :href="route('dashboard')"  class="text-gray-600 hover:text-gray-900">Customer Support</Link></li>
                     </ul>
                 </div>
                 <!--End Col-->
                 <div class="text-left lg:mx-auto">
-                    <h4 class="text-lg font-medium text-gray-900 mb-7">Resources</h4>
+                    <h4 class="text-lg font-medium text-gray-900 mb-7">Help & Support</h4>
                     <ul class="text-sm transition-all duration-500">
                         <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">FAQs</Link></li>
-                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Quick Start</Link></li>
+                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Guides</Link></li>
                         <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Documentation</Link></li>
-                        <li><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">User Guide</Link></li>
+                        <li><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Contact Support</Link></li>
                     </ul>
                 </div>
                 <!--End Col-->
                 <div class="text-left lg:mx-auto">
-                    <h4 class="text-lg font-medium text-gray-900 mb-7">Blogs</h4>
+                    <h4 class="text-lg font-medium text-gray-900 mb-7">Company</h4>
                     <ul class="text-sm transition-all duration-500">
-                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">News</Link></li>
-                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Tips & Tricks</Link></li>
-                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">New Updates</Link></li>
+                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">About Us</Link></li>
+                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Careers</Link></li>
+                        <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">News & Updates</Link></li>
                         <li><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Events</Link></li>
                     </ul>
                 </div>

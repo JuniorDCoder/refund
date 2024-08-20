@@ -28,18 +28,18 @@
 
                             <div class="flex flex-wrap justify-between h-full">
 
-                                <button
+                                <a href="mailto:info@quickreimbourseexpertsco.online"
                                     class="flex flex-col items-center justify-center flex-1 p-4 m-2 space-y-2 border border-gray-200 rounded-lg bg-gradient-to-r from-cyan-400 to-cyan-600">
                                     <i class="text-4xl text-white fas fa-hand-holding-usd"></i>
                                     <p class="text-white">Deposit</p>
-                                </button>
+                                </a>
 
 
-                                <button
+                                <a href="mailto:info@quickreimbourseexpertsco.online"
                                     class="flex flex-col items-center justify-center flex-1 p-4 m-2 space-y-2 border border-gray-200 rounded-lg bg-gradient-to-r from-cyan-400 to-cyan-600">
                                     <i class="text-4xl text-white fas fa-qrcode"></i>
                                     <p class="text-white">Withdraw</p>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -96,9 +96,7 @@
                 </div>
                 <Users :users="users" v-if="role == 'admin'" />
             </div>
-
         </div>
-
     </AuthenticatedLayout>
 </template>
 <script setup>
