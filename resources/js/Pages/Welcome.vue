@@ -4,7 +4,8 @@ import Header from '@/Components/Sections/Header.vue';
 import Hero from '@/Components/Sections/Hero.vue';
 import Footer from '@/Components/Sections/Footer.vue';
 import Steps from '@/Components/Sections/Steps.vue';
-
+import Testimonials from '@/Components/Sections/Testimonials.vue';
+import AboutUs from '@/Components/Sections/AboutUs.vue';
 defineProps({
     canLogin: {
         type: Boolean,
@@ -40,7 +41,9 @@ function handleImageError() {
         />
         <Header />
         <Hero />
+        <AboutUs/>
         <Steps />
+        <Testimonials />
         <Footer />
 
 
