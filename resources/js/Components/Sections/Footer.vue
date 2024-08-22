@@ -1,5 +1,12 @@
 <script setup>
-import { Link } from '@inertiajs/vue3';
+    import { Link } from '@inertiajs/vue3';
+    import { defineEmits } from 'vue';
+
+    const emit = defineEmits(['contactUsClicked']);
+
+    function emitContactUsEvent() {
+    emit('contactUsClicked');
+    }
 </script>
 
 <template>
@@ -13,9 +20,9 @@ import { Link } from '@inertiajs/vue3';
                         <span class="self-center text-xl font-semibold text-black whitespace-nowrap">QuickReimbourse</span>
                     </Link>
                     <p class="py-8 text-sm text-center text-gray-500 lg:max-w-xs lg:text-left">Trusted in more than 100 countries & 5 million customers. Have any query ?</p>
-                    <a href="mailto:info@quickreimbourseexpertsco.online"  class="py-2.5 px-5 h-9 block w-fit bg-indigo-600 rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-indigo-700 lg:mx-0">
+                    <div @click="emitContactUsEvent" class="py-2.5 cursor-pointer px-5 h-9 block w-fit bg-indigo-600 rounded-full shadow-sm text-xs text-white mx-auto transition-all duration-500 hover:bg-indigo-700 lg:mx-0">
                         Contact us
-                    </a>
+                    </div>
                 </div>
                 <!--End Col-->
                 <div class="text-left lg:mx-auto ">

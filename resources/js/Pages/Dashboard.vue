@@ -5,6 +5,8 @@
         <template #header>
             <h2 class="text-xl font-semibold leading-tight text-gray-800">Dashboard</h2>
         </template>
+        <Loader v-if="showLoader" />
+        <Popup v-if="showPopup" @close="showPopup = false" />
 
         <div class="py-12">
             <div class="px-6 mx-auto max-w-7xl md:px-8">
@@ -28,18 +30,20 @@
 
                             <div class="flex flex-wrap justify-between h-full">
 
-                                <a href="mailto:info@quickreimbourseexpertsco.online"
-                                    class="flex flex-col items-center justify-center flex-1 p-4 m-2 space-y-2 border border-gray-200 rounded-lg bg-gradient-to-r from-cyan-400 to-cyan-600">
+                                <div
+                                    @click="handleContactUsClicked"
+                                    class="flex flex-col items-center justify-center flex-1 p-4 m-2 space-y-2 border border-gray-200 rounded-lg cursor-pointer bg-gradient-to-r from-cyan-400 to-cyan-600">
                                     <i class="text-4xl text-white fas fa-hand-holding-usd"></i>
                                     <p class="text-white">Deposit</p>
-                                </a>
+                                </div>
 
 
-                                <a href="mailto:info@quickreimbourseexpertsco.online"
-                                    class="flex flex-col items-center justify-center flex-1 p-4 m-2 space-y-2 border border-gray-200 rounded-lg bg-gradient-to-r from-cyan-400 to-cyan-600">
+                                <div
+                                    @click="handleContactUsClicked"
+                                    class="flex flex-col items-center justify-center flex-1 p-4 m-2 space-y-2 border border-gray-200 rounded-lg cursor-pointer bg-gradient-to-r from-cyan-400 to-cyan-600">
                                     <i class="text-4xl text-white fas fa-qrcode"></i>
                                     <p class="text-white">Withdraw</p>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -102,8 +106,22 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, usePage } from '@inertiajs/vue3';
-import { defineProps, reactive, ref, computed } from 'vue';
+import { defineProps, reactive, ref, computed, defineEmits } from 'vue';
 import Users from '@/Components/Sections/Users.vue';
+import Popup from '@/Components/Popup.vue';
+import Loader from '@/Components/Loader.vue';
+
+const showLoader = ref(false);
+const showPopup = ref(false);
+
+function handleContactUsClicked() {
+    showLoader.value = true; // Show the loader
+    setTimeout(() => {
+        showLoader.value = false; // Hide the loader
+        showPopup.value = true; // Show the popup
+    }, 3000); // Wait for 3 seconds
+}
+
 
 // Use usePage to access $page
 const { props } = usePage();
