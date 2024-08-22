@@ -58,7 +58,9 @@ function handleImageError() {
 <template>
     <Head title="Welcome" />
     <!-- Spinner that shows before the content -->
-    <Loader v-if="showLoader" />
+    <div v-if="!showContent" class="flex items-center justify-center h-screen">
+        <div class="w-24 h-24 border-4 border-yellow-400 border-dashed rounded-full animate-spin"></div>
+    </div>
     <!-- Page content that shows after the spinner -->
     <div v-if="showContent" class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
         <img
