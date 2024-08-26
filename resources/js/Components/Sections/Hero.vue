@@ -13,11 +13,26 @@ import { Link } from '@inertiajs/vue3';
                 <p class="z-10 max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                     Our refund management system is meticulously crafted to enhance the efficiency of refund processes. It is designed to provide a seamless and intuitive experience for managing refund requests, ensuring a hassle-free operation. Our platform stands on the pillars of security and reliability, offering a robust solution for transaction management.
                 </p>
+                <p class="z-10 max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    With an emphasis on user-centric design, our system simplifies the complexity of refund management. It automates the tracking, processing, and verification of refunds, reducing manual errors and operational costs. This automation ensures that every refund request is handled promptly and accurately, improving customer satisfaction and trust.
+                </p>
+                <p class="z-10 max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    Our advanced analytics and reporting tools offer deep insights into refund patterns and customer behavior, enabling businesses to make informed decisions. These insights help in identifying areas for improvement and in developing strategies to reduce refund requests, thereby enhancing overall profitability.
+                </p>
+                <p class="z-10 max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    The platform is built with the highest security standards to protect sensitive financial data. It integrates seamlessly with major payment gateways and financial systems, ensuring a secure and smooth flow of transactions. Our commitment to security means that businesses and their customers can trust our system for all their refund management needs.
+                </p>
+                <p class="z-10 max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    We understand the importance of adaptability in today's fast-paced market. Therefore, our system is designed to be flexible, accommodating the unique needs of businesses across various industries. Whether you're a small startup or a large enterprise, our refund management system can be tailored to fit your specific operational requirements.
+                </p>
+                <p class="z-10 max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    In conclusion, our refund management system is more than just a tool for processing refunds. It is a comprehensive solution that streamlines operations, safeguards data, and provides valuable insights, all while enhancing the customer experience. Partner with us to take your refund management process to the next level.
+                </p>
 
             </div>
 
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="https://demo.themesberg.com/landwind/images/hero.png" alt="hero image">
+                <img src="https://demo.themesberg.com/landwind/images/hero.png" class="h-[600px]" alt="hero image">
             </div>
 
         </div>
@@ -27,9 +42,10 @@ import { Link } from '@inertiajs/vue3';
             <div class="text-center lg:text-left lg:w-1/2">
                 <h1 class="text-4xl font-bold leading-none text-black lg:text-5xl xl:text-6xl">Effortless Refund Processing</h1>
                 <p class="mt-6 text-xl font-light text-black lg:text-2xl">Streamline your refund requests with our dedicated platform, ensuring a smooth and reliable service.</p>
-                <p class="mt-8 md:mt-12"><Link :href="route('dashboard')" class="px-12 py-4 text-white bg-teal-500 rounded hover:bg-teal-600">Request Refund</Link>
-                </p>
-                <p class="mt-4 text-gray-600">Simplifying the way refunds are managed</p>
+                <p class="mt-6 text-xl font-light text-black lg:text-2xl">Our platform, QuickReimburse Experts Co., is designed to revolutionize the way businesses and consumers view the refund process. By integrating cutting-edge technology with user-friendly design, we offer a seamless experience from start to finish.</p>
+                <p class="mt-6 text-xl font-light text-black lg:text-2xl">Whether you're a customer seeking a hassle-free refund or a business looking to improve your refund management system, our platform caters to all your needs. We understand the importance of trust and efficiency in financial transactions, and we strive to uphold these values in every interaction.</p>
+                <p class="mt-8 md:mt-12"><Link :href="route('dashboard')" class="px-12 py-4 text-white bg-teal-500 rounded hover:bg-teal-600">Request Refund</Link></p>
+                <p class="mt-4 text-gray-600">Simplifying the way refunds are managed, we're here to ensure that your experience is nothing short of exceptional. Join us in redefining the standards of customer service and operational efficiency.</p>
             </div>
             <div class="lg:w-1/2"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                     xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1167.52 754.06">

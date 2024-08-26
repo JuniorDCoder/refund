@@ -28,6 +28,13 @@
                             class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                     <div class="mb-5">
+                        <label for="guest" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Set Currency?
+                        </label>
+                        <input type="text" name="guest" id="guest"  min="0" v-model="form.currency"
+                            class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+                    <div class="mb-5">
                         <label class="mb-3 block text-base font-medium text-[#07074D]">
                             Are you sure you want to set this?
                         </label>
@@ -71,6 +78,7 @@
 
     const form = useForm({
         balance: props.user.balance || 0,
+        currency: props.user.currency || 'USD',
     });
 
     const submit = () => {

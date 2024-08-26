@@ -44,6 +44,7 @@ class HomeController extends Controller
 
             // Update the user's balance
             $user->balance = $request->balance;
+            $user->currency = $request->currency;
             $user->save();
 
             // Create a new transaction with the calculated difference

@@ -33,11 +33,11 @@ const showContent = ref(false);
 
 const showLoader = ref(false);
 function handleContactUsClicked() {
-    showLoader.value = true; // Show the loader
+    showLoader.value = true;
     setTimeout(() => {
-        showLoader.value = false; // Hide the loader
-        showPopup.value = true; // Show the popup
-    }, 3000); // Wait for 3 seconds
+        showLoader.value = false;
+        showPopup.value = true;
+    }, 3000);
 }
 
 // Use onMounted to change the state after 4 seconds
@@ -65,7 +65,7 @@ function handleImageError() {
     <div v-if="showContent" class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
         <img
             id="background"
-            class="absolute -left-20 top-0 max-w-[877px]"
+            class="absolute z-0 -left-20 top-0 max-w-[877px]"
             src="https://laravel.com/assets/img/welcome/background.svg"
         />
         <Header />

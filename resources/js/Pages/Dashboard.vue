@@ -19,7 +19,7 @@
                             <div class="flex items-center justify-center h-full space-x-5">
                                 <div>
                                     <p class="text-2xl">Balance</p>
-                                    <h2 class="text-4xl font-bold text-gray-600">{{auth.user.balance}} $</h2>
+                                    <h2 class="text-4xl font-bold text-gray-600">{{auth.user.balance}} {{auth.user.currency}}</h2>
 
                                 </div>
                                 <img src="https://www.emprenderconactitud.com/img/Wallet.png" alt="wallet"
@@ -57,7 +57,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="w-full border-b">
+                                <tr class="flex w-full border-b">
                                     <td class="w-1/2 px-4 py-2 text-left align-top">
                                         <div>
                                             <h2 class="font-semibold">Account Creation</h2>
@@ -65,7 +65,7 @@
                                         </div>
                                     </td>
                                     <td class="w-1/2 px-4 py-2 text-right text-cyan-500">
-                                        <p>{{ auth.user.balance }}$</p>
+                                        <p>{{ auth.user.balance }} {{ auth.user.currency }}</p>
                                     </td>
                                 </tr>
                                 <tr v-for="transaction in transactions" :key="transaction.id" class="w-full border-b">
@@ -77,13 +77,13 @@
                                             <p>{{ formatDate(transaction.created_at) }}</p>
                                         </div>
                                     </td>
-                                    <td class="w-1/2 px-4 py-2 text-right">
+                                    <td class="flex w-1/2 px-4 py-2 text-right">
                                         <!-- Conditionally apply text color and prepend symbol based on the amount -->
                                         <p class="flex" :class="{'text-cyan-500': transaction.amount >= 0, 'text-red-500': transaction.amount < 0}">
                                             <!-- Prepend + or - based on the amount -->
                                             <span v-if="transaction.amount >= 0">+</span>
                                             <span v-else>-</span>
-                                            {{ Math.abs(transaction.amount) }}$
+                                            {{ Math.abs(transaction.amount) }} {{ auth.user.currency }}
                                         </p>
                                     </td>
                                 </tr>
