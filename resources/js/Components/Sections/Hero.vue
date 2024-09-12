@@ -1,5 +1,13 @@
 <script setup>
 import { Link } from '@inertiajs/vue3';
+import { defineProps } from 'vue';
+
+defineProps({
+    appName: {
+        type: String,
+        required: true,
+    },
+})
 </script>
 <template>
     <section class="bg-white dark:bg-gray-900">
@@ -42,7 +50,7 @@ import { Link } from '@inertiajs/vue3';
             <div class="text-center lg:text-left lg:w-1/2">
                 <h1 class="text-4xl font-bold leading-none text-black lg:text-5xl xl:text-6xl">Effortless Refund Processing</h1>
                 <p class="mt-6 text-xl font-light text-black lg:text-2xl">Streamline your refund requests with our dedicated platform, ensuring a smooth and reliable service.</p>
-                <p class="mt-6 text-xl font-light text-black lg:text-2xl">Our platform, QuickReimburse Experts Co., is designed to revolutionize the way businesses and consumers view the refund process. By integrating cutting-edge technology with user-friendly design, we offer a seamless experience from start to finish.</p>
+                <p class="mt-6 text-xl font-light text-black lg:text-2xl">Our platform, {{ appName }}, is designed to revolutionize the way businesses and consumers view the refund process. By integrating cutting-edge technology with user-friendly design, we offer a seamless experience from start to finish.</p>
                 <p class="mt-6 text-xl font-light text-black lg:text-2xl">Whether you're a customer seeking a hassle-free refund or a business looking to improve your refund management system, our platform caters to all your needs. We understand the importance of trust and efficiency in financial transactions, and we strive to uphold these values in every interaction.</p>
                 <p class="mt-8 md:mt-12"><Link :href="route('dashboard')" class="px-12 py-4 text-white bg-teal-500 rounded hover:bg-teal-600">Request Refund</Link></p>
                 <p class="mt-4 text-gray-600">Simplifying the way refunds are managed, we're here to ensure that your experience is nothing short of exceptional. Join us in redefining the standards of customer service and operational efficiency.</p>

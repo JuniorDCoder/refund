@@ -3,8 +3,8 @@
         <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
             <div class="flex items-center justify-between w-full max-w-screen-xl mx-auto md:flex-wrap">
                 <Link :href="route('welcome')" class="z-10 items-center hidden md:flex">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="QuickReimbourse" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">QuickReimbourse</span>
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" :alt="appName" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{{ appName }}</span>
                 </Link>
                 <div class="z-30 flex items-center gap-4 lg:order-2">
                     <Link :href="route('welcome')" class="block py-2 pl-3 pr-4 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Home</Link>
@@ -20,6 +20,14 @@
 
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
+import { defineProps } from 'vue';
+
+defineProps({
+    appName: {
+        type: String,
+        required: true,
+    },
+})
 </script>
 
 <style scoped>

@@ -1,6 +1,13 @@
 <script setup>
     import { Link } from '@inertiajs/vue3';
-    import { defineEmits } from 'vue';
+    import { defineEmits, defineProps } from 'vue';
+
+    defineProps({
+        appName: {
+            type: String,
+            required: true,
+        },
+    })
 
     const emit = defineEmits(['contactUsClicked']);
 
@@ -16,8 +23,8 @@
             <div class="grid grid-cols-2 gap-3 py-10 sm:grid-cols-4 lg:grid-cols-6 md:gap-8 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
                 <div class="mb-10 col-span-full lg:col-span-2 lg:mb-0">
                     <Link :href="route('welcome')"  class="flex justify-center lg:justify-start">
-                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="QuickReimbourse" />
-                        <span class="self-center text-xl font-semibold text-black whitespace-nowrap">QuickReimbourse</span>
+                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" :alt="appName" />
+                        <span class="self-center text-xl font-semibold text-black whitespace-nowrap">{{appName}}</span>
                     </Link>
                     <p class="py-8 text-sm text-center text-gray-500 lg:max-w-xs lg:text-left">Trusted in more than 100 countries & 5 million customers. Have any query ?</p>
                     <div @click="emitContactUsEvent" class="py-2.5 cursor-pointer px-5 h-9 block w-fit bg-indigo-600 rounded-full shadow-sm text-xs text-white mx-auto transition-all duration-500 hover:bg-indigo-700 lg:mx-0">
@@ -26,7 +33,7 @@
                 </div>
                 <!--End Col-->
                 <div class="text-left lg:mx-auto ">
-                    <h4 class="text-lg font-medium text-gray-900 mb-7">QuickReimbourse Experts Co</h4>
+                    <h4 class="text-lg font-medium text-gray-900 mb-7">{{ appName }}</h4>
                     <ul class="text-sm transition-all duration-500">
                         <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">Home</Link></li>
                         <li class="mb-6"><Link :href="route('welcome')"  class="text-gray-600 hover:text-gray-900">About</Link></li>
@@ -68,7 +75,7 @@
             <!--Grid-->
             <div class="border-t border-gray-200 py-7">
                 <div class="flex flex-col items-center justify-center lg:justify-between lg:flex-row">
-                    <span class="text-sm text-gray-500 ">©<Link href="/">QuickReimbourse Experts Co</Link> {{new Date().getFullYear()}}, All rights reserved.</span>
+                    <span class="text-sm text-gray-500 ">©<Link href="/">{{appName}}</Link> {{new Date().getFullYear()}}, All rights reserved.</span>
                     <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
                         <Link :href="route('welcome')"  class="flex items-center justify-center bg-gray-700 rounded-full w-9 h-9 hover:bg-indigo-600">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

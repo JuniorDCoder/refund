@@ -26,6 +26,10 @@ defineProps({
         type: String,
         required: true,
     },
+    appName: {
+        type: String,
+        required: true,
+    },
 });
 
 // State to control the visibility of the spinner and content
@@ -68,12 +72,12 @@ function handleImageError() {
             class="absolute z-0 -left-20 top-0 max-w-[877px]"
             src="https://laravel.com/assets/img/welcome/background.svg"
         />
-        <Header />
-        <Hero />
-        <AboutUs/>
+        <Header :app-name="appName" />
+        <Hero :app-name="appName"/>
+        <AboutUs :app-name="appName"/>
         <Steps />
         <Testimonials />
-        <Footer @contactUsClicked="handleContactUsClicked" />
+        <Footer :app-name="appName" @contactUsClicked="handleContactUsClicked" />
 
         <Loader v-if="showLoader" />
         <Popup v-if="showPopup" @close="showPopup = false" />

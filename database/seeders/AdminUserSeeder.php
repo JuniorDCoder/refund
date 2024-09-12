@@ -15,7 +15,7 @@ class AdminUserSeeder extends Seeder
     {
         $user = User::firstOrCreate([
             'name' => 'Admin',
-            'email' => 'info@quickreimbourseexpertsco.online',
+            'email' => 'info@quickreimburse.online',
             'password' => bcrypt('password'),
         ]);
 
