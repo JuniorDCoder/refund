@@ -30,6 +30,10 @@ defineProps({
         type: String,
         required: true,
     },
+    email: {
+        type: String,
+        required: true,
+    },
 });
 
 // State to control the visibility of the spinner and content
@@ -80,6 +84,6 @@ function handleImageError() {
         <Footer :app-name="appName" @contactUsClicked="handleContactUsClicked" />
 
         <Loader v-if="showLoader" />
-        <Popup v-if="showPopup" @close="showPopup = false" />
+        <Popup :email="email" :app-name="appName" v-if="showPopup" @close="showPopup = false" />
     </div>
 </template>

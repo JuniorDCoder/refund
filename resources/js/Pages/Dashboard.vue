@@ -6,7 +6,7 @@
             <h2 class="text-xl font-semibold leading-tight text-gray-800">Dashboard</h2>
         </template>
         <Loader v-if="showLoader" />
-        <Popup v-if="showPopup" @close="showPopup = false" />
+        <Popup :email="props.email" :app-name="props.appName" v-if="showPopup" @close="showPopup = false" />
 
         <div class="py-12">
             <div class="px-6 mx-auto max-w-7xl md:px-8">

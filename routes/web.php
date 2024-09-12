@@ -14,6 +14,7 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
         'appName' => config('app.name'),
+        'email' => config('mail.from.address'),
     ]);
 })->name('welcome');
 

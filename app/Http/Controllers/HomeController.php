@@ -19,7 +19,9 @@ class HomeController extends Controller
         return Inertia::render('Dashboard', [
             'role' => auth()->user()->roles->first()->name,
             'users' => $users,
-            'transactions' => $transactions
+            'transactions' => $transactions,
+            'email' => config('mail.from.address'),
+            'appName' => config('app.name'),
         ]);
     }
 
